@@ -1,0 +1,19 @@
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Kullanıcının kendi registry'si (yayına dahil değil — sadece registry.example.json public)
+registry.json
+
+# Node
+node_modules/
+
+# Dahili
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

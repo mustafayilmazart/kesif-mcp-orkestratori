@@ -1,0 +1,27 @@
+{
+  "name": "kesif-mcp-orkestratori",
+  "version": "1.0.0",
+  "description": "MCP registry sync — Claude Desktop, Claude Code ve Cursor için tek noktadan MCP yönetimi",
+  "type": "module",
+  "main": "sync-mcp-configs.mjs",
+  "bin": {
+    "kesif-mcp-sync": "./sync-mcp-configs.mjs"
+  },
+  "scripts": {
+    "sync": "node sync-mcp-configs.mjs",
+    "dry-run": "node sync-mcp-configs.mjs --dry-run"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "registry",
+    "sync"
+  ],
+  "author": "Mustafa Yılmaz <medya@kesif.org>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

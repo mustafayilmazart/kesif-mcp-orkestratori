@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "description": "Master MCP Registry — kategori bazlı tüm MCP tanımları",
+  "categories": {
+    "kesif-core": {
+      "description": "Keşif Ekosistemi temel sunucular",
+      "servers": [
+        {
+          "name": "filesystem",
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-filesystem", "${WORKSPACE_ROOT}"],
+          "env": {}
+        }
+      ]
+    },
+    "research": {
+      "description": "Akademik ve araştırma kaynakları",
+      "servers": [
+        {
+          "name": "pubmed",
+          "command": "uv",
+          "args": ["--directory", "/path/to/pubmed-mcp", "run", "pubmed-mcp"],
+          "env": { "PUBMED_API_KEY": "${PUBMED_API_KEY}" }
+        }
+      ]
+    },
+    "ai-tools": {
+      "description": "AI yardımcı araçlar",
+      "servers": [
+        {
+          "name": "memory",
+          "command": "npx",
+          "args": ["-y", "@modelcontextprotocol/server-memory"],
+          "env": {}
+        }
+      ]
+    }
+  },
+  "targets": [
+    { "name": "claude-desktop", "path": "~/AppData/Roaming/Claude/claude_desktop_config.json", "format": "claude" },
+    { "name": "claude-code",    "path": "~/.claude/claude_desktop_config.json",                "format": "claude" },
+    { "name": "cursor",         "path": "~/.cursor/mcp.json",                                  "format": "cursor" }
+  ]
+}
