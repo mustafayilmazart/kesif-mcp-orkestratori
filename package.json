@@ -19,7 +19,7 @@
     "registry",
     "sync"
   ],
-  "author": "Mustafa Yılmaz <medya@kesif.org>",
+  "author": "Mustafa Yılmaz <bilgi@mustafayilmaz.art>",
   "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
