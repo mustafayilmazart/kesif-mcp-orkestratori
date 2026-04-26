@@ -61,7 +61,7 @@ Hepsi **aynı registry'den** otomatik üretiliyor. Bir yerde değişiklik = her 
 ## 🚀 Kurulum
 
 ```bash
-git clone https://github.com/kpmustafayilmaz/kesif-mcp-orkestratori
+git clone https://github.com/mustafayilmazart/kesif-mcp-orkestratori
 cd kesif-mcp-orkestratori
 npm install
 cp .env.example .env  # API key'leri girin
